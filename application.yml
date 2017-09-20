@@ -3,3 +3,11 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://user:${eureka.password}@localhost:8761/eureka/
+
+zuul:
+  prefix: /api
+  routes:
+    users:
+      path: /users/**
+      serviceId: ms-users
+  strip-prefix: false
