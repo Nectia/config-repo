@@ -2,7 +2,7 @@ eureka:
   password: s3cret
   client:
     serviceUrl:
-      defaultZone: http://user:${eureka.password}@localhost:8761/eureka/
+      defaultZone: http://user:${eureka.password}@ip-10-0-1-93.us-west-1.compute.internal:8761/eureka/
 
 zuul:
   prefix: /api
